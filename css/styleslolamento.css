@@ -1,11 +1,15 @@
-/* Colores personalizados */
-.color1 {color: #c63ab4;}
-.color2 {color: #f14ca5;}
-.color3 {color: #ff82a9;}
-.color4 {color: #ffb9b7;}
-.color5 {color: #ffddbc;}
+/* =========================================
+   Colores personalizados
+========================================= */
+.color1 { color: #c63ab4; }
+.color2 { color: #f14ca5; }
+.color3 { color: #ff82a9; }
+.color4 { color: #ffb9b7; }
+.color5 { color: #ffddbc; }
 
-/* Estilos generales */
+/* =========================================
+   Estilos generales
+========================================= */
 body {
   font-family: Arial, sans-serif;
   margin: 0;
@@ -13,26 +17,34 @@ body {
   background-color: #fff0f5;
 }
 
-/* Navegación */
+a {
+  color: #c63ab4;
+  text-decoration: none;
+}
+a:hover {
+  text-decoration: underline;
+}
+
+/* =========================================
+   Navegación
+========================================= */
 .site-nav {
   text-align: center;
   background-color: #ffddbc;
   padding: 15px;
-    position: sticky;
+  position: sticky;
   top: 0;
   z-index: 100;
 }
 .site-nav a {
   margin: 0 15px;
-  text-decoration: none;
   font-weight: bold;
   color: #c63ab4;
 }
-.site-nav a:hover {
-  text-decoration: underline;
-}
 
-/* Encabezado */
+/* =========================================
+   Encabezado
+========================================= */
 .site-header {
   text-align: center;
   padding: 50px 20px;
@@ -49,7 +61,9 @@ body {
   font-weight: 300;
 }
 
-/* Barra de carga animada */
+/* =========================================
+   Barra de carga animada
+========================================= */
 .loading-bar-container {
   width: 25%;
   height: 15px;
@@ -68,7 +82,9 @@ body {
   to { width: 100%; }
 }
 
-/* Contenedor principal */
+/* =========================================
+   Contenedor principal y secciones
+========================================= */
 .container {
   max-width: 900px;
   margin: 40px auto;
@@ -84,30 +100,27 @@ h2 {
   margin-bottom: 15px;
 }
 
-a {
-  color: #c63ab4;
-}
-a:hover {
-  text-decoration: underline;
-}
-
-/* Perfil */
+/* =========================================
+   Perfil
+========================================= */
 .profile {
   display: flex;
   flex-direction: column;
   align-items: center;
   text-align: center;
 }
+
 #presentacion p {
-  line-height: 1.7;       /* Espacio entre líneas */
-  font-size: 1rem;        /* Tamaño cómodo para leer */
-  margin-bottom: 1.2em;   /* Separación entre párrafos */
-  text-align: justify;     /* Opcional: justificado para estilo profesional */
-  max-width: 800px;        /* Limita el ancho del texto */
-  margin-left: auto;       
+  line-height: 1.7;
+  font-size: 1rem;
+  margin-bottom: 1.2em;
+  text-align: justify;
+  max-width: 800px;
+  margin-left: auto;
   margin-right: auto;
-  color: #333;            /* Contraste legible sobre fondo */
+  color: #333;
 }
+
 .profile-img {
   width: 150px;
   height: 150px;
@@ -115,13 +128,15 @@ a:hover {
   object-fit: cover;
   margin-bottom: 20px;
 }
-.about-me {
-    text-align: center;
-}
-.my-works{
-   text-align: center; 
+
+.about-me,
+.my-works {
+  text-align: center;
 }
 
+/* =========================================
+   Tarjetas del equipo
+========================================= */
 .team-cards-lm {
   display: flex;
   flex-wrap: wrap;
@@ -130,56 +145,18 @@ a:hover {
   margin-top: 20px;
 }
 
-.team-card-lm {
-  background-color: #ff82a9;
-  border-radius: 10px;
-  width: 150px;
-  text-align: center;
-  padding: 15px;
-  box-shadow: 0 4px 6px rgba(0,0,0,0.1);
-  transition: transform 0.3s, box-shadow 0.3s;
-}
-
-.team-card-.team-card-lm {
-  transform: translateY(-5px);
-  box-shadow: 0 8px 12px rgba(0,0,0,0.2);
-}
-
-.team-card-lm img {
-  width: 100%;
-  border-radius: 0%;
-  object-fit: cover;
-  margin-bottom: 10px;
-}
-
-.team-card-lm a {
-  display: block;
-  font-weight: bold;
-  color: #000000;
-  text-decoration: none;
-}
-
-.team-card-lm a:hover {
-  text-decoration: underline;
-}
-
-
+.team-card-lm,
 .team-card-lm-music {
   background-color: #ff82a9;
   border-radius: 10px;
   width: 150px;
-  height: 200px;
   text-align: center;
   padding: 15px;
   box-shadow: 0 4px 6px rgba(0,0,0,0.1);
   transition: transform 0.3s, box-shadow 0.3s;
 }
 
-.team-card-.team-card-lm-music {
-  transform: translateY(-5px);
-  box-shadow: 0 8px 12px rgba(0,0,0,0.2);
-}
-
+.team-card-lm img,
 .team-card-lm-music img {
   width: 100%;
   border-radius: 0%;
@@ -187,21 +164,94 @@ a:hover {
   margin-bottom: 10px;
 }
 
+.team-card-lm a,
 .team-card-lm-music a {
   display: block;
   font-weight: bold;
-  color: #000000;
+  color: #000;
   text-decoration: none;
 }
 
+.team-card-lm a:hover,
 .team-card-lm-music a:hover {
   text-decoration: underline;
 }
 
-/* Footer */
+.team-card-lm:hover,
+.team-card-lm-music:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 12px rgba(0,0,0,0.2);
+}
+
+.team-card-lm-music {
+  height: 200px;
+}
+
+/* =========================================
+   Footer
+========================================= */
 .site-footer {
   text-align: center;
   padding: 20px;
   background-color: #ffb9b7;
   color: white;
+}
+
+/* =========================================
+   Media Queries (Responsivo)
+========================================= */
+
+/* Tablets / pantallas medianas ≤900px */
+@media (max-width: 900px) {
+  .container {
+    padding: 0 15px;
+  }
+
+  .team-cards-lm {
+    gap: 15px;
+  }
+
+  .team-card-lm,
+  .team-card-lm-music {
+    width: 120px;
+    padding: 10px;
+  }
+
+  .site-header h1 {
+    font-size: 2rem;
+  }
+
+  .site-header .subtitle {
+    font-size: 1rem;
+  }
+}
+
+/* Móviles pequeños ≤400px */
+@media (max-width: 400px) {
+  .site-nav a {
+    display: block;
+    margin: 5px 0;
+  }
+
+  .team-cards-lm {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .team-card-lm,
+  .team-card-lm-music {
+    width: 100%;
+  }
+
+  .site-header h1 {
+    font-size: 1.5rem;
+  }
+
+  .site-header .subtitle {
+    font-size: 0.9rem;
+  }
+
+  .loading-bar-container {
+    width: 80%;
+  }
 }
