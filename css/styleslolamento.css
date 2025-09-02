@@ -198,60 +198,71 @@ h2 {
 }
 
 /* =========================================
+   Modal Netflix
+========================================= */
+.modal {
+  display: none; /* oculto por defecto */
+  position: fixed;
+  z-index: 1000;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0,0,0,0.6); /* fondo semi-transparente */
+}
+
+.modal-content {
+  background-color: #fff;
+  margin: 12% auto;
+  padding: 20px;
+  border-radius: 15px;
+  width: 80%;
+  max-width: 400px;
+  text-align: center;
+  box-shadow: 0 8px 15px rgba(0,0,0,0.3);
+  animation: aparecer 0.3s ease-in-out;
+}
+
+.cerrar {
+  color: #aaa;
+  float: right;
+  font-size: 24px;
+  font-weight: bold;
+  cursor: pointer;
+}
+.cerrar:hover { color: #ff3366; }
+
+@keyframes aparecer {
+  from { transform: scale(0.8); opacity: 0; }
+  to { transform: scale(1); opacity: 1; }
+}
+
+/* Manito en los títulos de películas */
+#Peliculas-favoritas h3 {
+  cursor: pointer;
+  transition: color 0.2s ease;
+}
+#Peliculas-favoritas h3:hover { color: #ff3366; }
+
+/* =========================================
    Media Queries (Responsivo)
 ========================================= */
-
-/* Tablets / pantallas medianas ≤900px */
 @media (max-width: 900px) {
-  .container {
-    padding: 0 15px;
-  }
-
-  .team-cards-lm {
-    gap: 15px;
-  }
-
-  .team-card-lm,
-  .team-card-lm-music {
+  .container { padding: 0 15px; }
+  .team-cards-lm { gap: 15px; }
+  .team-card-lm, .team-card-lm-music {
     width: 120px;
     padding: 10px;
   }
-
-  .site-header h1 {
-    font-size: 2rem;
-  }
-
-  .site-header .subtitle {
-    font-size: 1rem;
-  }
+  .site-header h1 { font-size: 2rem; }
+  .site-header .subtitle { font-size: 1rem; }
 }
 
-/* Móviles pequeños ≤400px */
 @media (max-width: 400px) {
-  .site-nav a {
-    display: block;
-    margin: 5px 0;
-  }
-
-  .team-cards-lm {
-    flex-direction: column;
-    gap: 10px;
-  }
-
-  .team-card-lm,
-  .team-card-lm-music {
-    width: 100%;
-  }
-
-  .site-header h1 {
-    font-size: 1.5rem;
-  }
-
-  .site-header .subtitle {
-    font-size: 0.9rem;
-  }
-
-  .loading-bar-container {
-    width: 80%;
-  }
+  .site-nav a { display: block; margin: 5px 0; }
+  .team-cards-lm { flex-direction: column; gap: 10px; }
+  .team-card-lm, .team-card-lm-music { width: 100%; }
+  .site-header h1 { font-size: 1.5rem; }
+  .site-header .subtitle { font-size: 0.9rem; }
+  .loading-bar-container { width: 80%; }
 }
