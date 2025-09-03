@@ -197,6 +197,43 @@ h2 {
     font-size: 0.9rem;
 }
 
+/*==========================================
+    Modo Oscuro
+==========================================*/
+#filtro {
+      position: fixed;
+      inset: 0; 
+      background: rgba(0, 0, 0, 0.5);
+      display: none; 
+      z-index: 9998;
+    }
+
+#filtroButton {
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    z-index: 9999;
+    background-color: rgb(249, 247, 247);
+    border-radius: 100%;
+    margin: 1%;
+    padding: 1%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    gap: 5px;
+}
+
+#lightswitch {
+    height: 48px;
+    width: 48px;
+    border-radius: 50%;
+}
+
+.on {
+    background-color: yellow;
+}
+
 /* =========================================
    Media Queries (Responsivo)
 ========================================= */
