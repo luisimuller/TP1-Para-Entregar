@@ -13,7 +13,10 @@ Tecnologías:
 
 Host:
 
-Funcionalidad utilizando JS
+Estructura de Archivos:
+
+
+Funcionalidad utilizando JS:
 - Filtro para atenuar luminosidad (Index)
 - Manejo de Modals (Página Personal Lola Sparrow)
 - Tranformación dinámica de botón (apodado el 'Lazy Button') (Página Personal Jack Smith)
