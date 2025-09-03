@@ -1,0 +1,311 @@
+/* =========================================
+   Colores personalizados
+========================================= */
+.color1 { color: #e0ffe0; } /* Verde claro */
+.color2 { color: #2e4d1c; } /* Verde musgo */
+.color3 { color: #7a5c2e; } /* Marrón claro */
+.color4 { color: #3b2f1c; } /* Marrón oscuro */
+.color5 { color: #b6d99c; } /* Verde pasto */
+
+/* =========================================
+   Estilos generales
+========================================= */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background: linear-gradient(135deg, #b6d99c 0%, #2e4d1c 100%);
+}
+
+a {
+  color: #2e4d1c;
+  text-decoration: none;
+  font-weight: bold;
+}
+a:hover {
+  color: #7a5c2e;
+  text-decoration: underline;
+}
+
+p {
+    color: #2e4d1c;
+}
+/* =========================================
+   Navegación
+========================================= */
+.site-nav {
+  text-align: center;
+  background-color: #7a5c2e;
+  padding: 15px;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  box-shadow: 0 2px 8px rgba(46,77,28,0.2);
+}
+.site-nav a {
+  margin: 0 15px;
+  font-weight: bold;
+  color: #e0ffe0;
+}
+
+/* =========================================
+   Encabezado
+========================================= */
+.site-header {
+  text-align: center;
+  padding: 50px 20px;
+  background: linear-gradient(135deg, #b6d99c 0%, #2e4d1c 100%);
+  color: #2e4d1c;
+  border-bottom: 4px solid #7a5c2e;
+}
+.site-header h1 {
+  margin: 0;
+  font-size: 2.5rem;
+}
+.site-header .subtitle {
+  margin-top: 10px;
+  font-size: 1.2rem;
+  font-weight: 300;
+}
+
+/* =========================================
+   Barra de carga animada
+========================================= */
+.loading-bar-container {
+  width: 25%;
+  height: 15px;
+  background: rgba(46,77,28,0.2);
+  margin: 20px auto 0;
+  border-radius: 10px;
+  overflow: hidden;
+}
+.loading-bar-fill {
+  width: 0;
+  height: 100%;
+  background: #88ff82;
+  animation: load 3s forwards infinite;
+}
+@keyframes load {
+    from {width: 100%; background-color: #2e4d1c;}
+    to { width: 0%; background-color: #b6d99c;}
+}
+
+/* =========================================
+   Contenedor principal y secciones
+========================================= */
+.container {
+  max-width: 900px;
+  margin: 40px auto;
+  padding: 0 20px;
+}
+
+section {
+  margin-bottom: 50px;
+}
+
+h2 {
+  color: #2e4d1c;
+  margin-bottom: 15px;
+}
+
+/* =========================================
+   Perfil
+========================================= */
+.profile {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+#presentacion p {
+  line-height: 1.7;
+  font-size: 1rem;
+  margin-bottom: 1.2em;
+  text-align: justify;
+  max-width: 800px;
+  margin-left: auto;
+  margin-right: auto;
+  color: #2e4d1c;
+}
+
+.profile-img {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-bottom: 20px;
+}
+
+.about-me,
+.my-works {
+  text-align: center;
+}
+
+/* =========================================
+   Tarjetas del equipo
+========================================= */
+.team-cards-lm {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.team-card-lm,
+.team-card-lm-music {
+  background-color: #b6d99c;
+  border-radius: 10px;
+  width: 150px;
+  text-align: center;
+  padding: 15px;
+  box-shadow: 0 4px 6px rgba(46,77,28,0.1);
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.team-card-lm img,
+.team-card-lm-music img {
+  width: 100%;
+  height: 120px;
+  object-fit: contain;
+  border-radius: 8px;
+  margin-bottom: 10px;
+  border: 3px solid #2e4d1c; /* marco verde musgo */
+  background: #e0ffe0; /* fondo claro para contraste */
+}
+
+.team-card-lm a,
+.team-card-lm-music a {
+  display: block;
+  font-weight: bold;
+  color: #2e4d1c;
+  text-decoration: none;
+}
+
+.team-card-lm a:hover,
+.team-card-lm-music a:hover {
+  text-decoration: underline;
+}
+
+.team-card-lm:hover,
+.team-card-lm-music:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 12px rgba(46,77,28,0.2);
+}
+
+.team-card-lm-music {
+  height: 200px;
+}
+
+/* Tooltip personalizado para la primera tarjeta Router */
+.tooltip-router {
+  position: relative;
+}
+.tooltip-redes {
+  position: relative;
+}
+.tooltip-sistemas {
+  position: relative;
+}
+.tooltip-seguridad {
+  position: relative;
+}
+.custom-tooltip {
+  opacity: 0;
+  visibility: hidden;
+  position: absolute;
+  left: 50%;
+  top: 110%;
+  transform: translateX(-50%) translateY(10px);
+  background: #fffbe6;
+  color: #2e4d1c;
+  border: 1px solid #7a5c2e;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(46,77,28,0.15);
+  padding: 14px 18px;
+  width: 320px;
+  z-index: 200;
+  font-size: 1rem;
+  text-align: left;
+  pointer-events: none;
+  transition: opacity 0.35s cubic-bezier(.4,0,.2,1), transform 0.35s cubic-bezier(.4,0,.2,1), visibility 0.35s;
+}
+.tooltip-router:hover .custom-tooltip,
+.tooltip-redes:hover .custom-tooltip,
+.tooltip-sistemas:hover .custom-tooltip,
+.tooltip-seguridad:hover .custom-tooltip {
+  opacity: 1;
+  visibility: visible;
+  transform: translateX(-50%) translateY(0);
+  pointer-events: auto;
+}
+
+/* =========================================
+   Footer
+========================================= */
+.site-footer {
+  text-align: center;
+  padding: 20px;
+  background-color: #2e4d1c;
+  color: #e0ffe0;
+}
+
+/* =========================================
+   Media Queries (Responsivo)
+========================================= */
+
+/* Tablets / pantallas medianas ≤900px */
+@media (max-width: 900px) {
+  .container {
+    padding: 0 15px;
+  }
+
+  .team-cards-lm {
+    gap: 15px;
+  }
+
+  .team-card-lm,
+  .team-card-lm-music {
+    width: 120px;
+    padding: 10px;
+  }
+
+  .site-header h1 {
+    font-size: 2rem;
+  }
+
+  .site-header .subtitle {
+    font-size: 1rem;
+  }
+}
+
+/* Móviles pequeños ≤400px */
+@media (max-width: 400px) {
+  .site-nav a {
+    display: block;
+    margin: 5px 0;
+  }
+
+  .team-cards-lm {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .team-card-lm,
+  .team-card-lm-music {
+    width: 100%;
+  }
+
+  .site-header h1 {
+    font-size: 1.5rem;
+  }
+
+  .site-header .subtitle {
+    font-size: 0.9rem;
+  }
+
+  .loading-bar-container {
+    width: 80%;
+  }
+}
