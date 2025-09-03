@@ -1,11 +1,25 @@
 /* =========================================
    Colores personalizados
 ========================================= */
-.color1 { color: #c63ab4; }
-.color2 { color: #f14ca5; }
-.color3 { color: #ff82a9; }
-.color4 { color: #ffb9b7; }
-.color5 { color: #ffddbc; }
+.color1 {
+  color: #c63ab4;
+}
+
+.color2 {
+  color: #f14ca5;
+}
+
+.color3 {
+  color: #ff82a9;
+}
+
+.color4 {
+  color: #ffb9b7;
+}
+
+.color5 {
+  color: #ffddbc;
+}
 
 /* =========================================
    Estilos generales
@@ -21,6 +35,7 @@ a {
   color: #c63ab4;
   text-decoration: none;
 }
+
 a:hover {
   text-decoration: underline;
 }
@@ -36,6 +51,7 @@ a:hover {
   top: 0;
   z-index: 100;
 }
+
 .site-nav a {
   margin: 0 15px;
   font-weight: bold;
@@ -51,10 +67,12 @@ a:hover {
   background: linear-gradient(135deg, #c63ab4, #ffb9b7);
   color: white;
 }
+
 .site-header h1 {
   margin: 0;
   font-size: 2.5rem;
 }
+
 .site-header .subtitle {
   margin-top: 10px;
   font-size: 1.2rem;
@@ -67,19 +85,23 @@ a:hover {
 .loading-bar-container {
   width: 25%;
   height: 15px;
-  background: rgba(255,255,255,0.3);
+  background: rgba(255, 255, 255, 0.3);
   margin: 20px auto 0;
   border-radius: 10px;
   overflow: hidden;
 }
+
 .loading-bar-fill {
   width: 0;
   height: 100%;
   background: #ff82a9;
   animation: load 3s forwards infinite;
 }
+
 @keyframes load {
-  to { width: 100%; }
+  to {
+    width: 100%;
+  }
 }
 
 /* =========================================
@@ -113,8 +135,8 @@ h2 {
 #presentacion p {
   line-height: 1.7;
   font-size: 1rem;
+  text-align: center;
   margin-bottom: 1.2em;
-  text-align: justify;
   max-width: 800px;
   margin-left: auto;
   margin-right: auto;
@@ -122,20 +144,21 @@ h2 {
 }
 
 .profile-img {
-  width: 150px;
-  height: 150px;
+  width: 160px;
+  height: 160px;
   border-radius: 50%;
   object-fit: cover;
   margin-bottom: 20px;
+  border: 6px solid #c63ab4;
 }
 
 .about-me,
-.my-works {
+.titles {
   text-align: center;
 }
 
 /* =========================================
-   Tarjetas del equipo
+   Tarjetas de habilidades, pelis y musica
 ========================================= */
 .team-cards-lm {
   display: flex;
@@ -145,47 +168,49 @@ h2 {
   margin-top: 20px;
 }
 
-.team-card-lm,
-.team-card-lm-music {
+.team-card-lm {
   background-color: #ff82a9;
   border-radius: 10px;
-  width: 150px;
+  width: 200px;
   text-align: center;
   padding: 15px;
-  box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
   transition: transform 0.3s, box-shadow 0.3s;
 }
 
-.team-card-lm img,
-.team-card-lm-music img {
+.team-card-lm img {
   width: 100%;
-  border-radius: 0%;
+  height: 140px;
   object-fit: cover;
   margin-bottom: 10px;
+  border-radius: 6px;
+}
+.team-card-lm h3 {
+  color: #fff0f5;
+  margin: 10px 0;
+}
+.team-card-lm p {
+  color: #fff0f5;
+  font-size: 0.95rem;
 }
 
-.team-card-lm a,
-.team-card-lm-music a {
+.team-card-lm a {
   display: block;
   font-weight: bold;
   color: #000;
   text-decoration: none;
+  transition: color 0.3s;
 }
 
-.team-card-lm a:hover,
-.team-card-lm-music a:hover {
+.team-card-lm a:hover {
   text-decoration: underline;
 }
 
-.team-card-lm:hover,
-.team-card-lm-music:hover {
+.team-card-lm:hover {
   transform: translateY(-5px);
-  box-shadow: 0 8px 12px rgba(0,0,0,0.2);
+  box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2);
 }
 
-.team-card-lm-music {
-  height: 200px;
-}
 
 /* =========================================
    Footer
@@ -201,14 +226,16 @@ h2 {
    Modal Netflix
 ========================================= */
 .modal {
-  display: none; /* oculto por defecto */
+  display: none;
+  /* oculto por defecto */
   position: fixed;
   z-index: 1000;
   left: 0;
   top: 0;
   width: 100%;
   height: 100%;
-  background-color: rgba(0,0,0,0.6); /* fondo semi-transparente */
+  background-color: rgba(0, 0, 0, 0.6);
+  /* fondo semi-transparente */
 }
 
 .modal-content {
@@ -219,7 +246,7 @@ h2 {
   width: 80%;
   max-width: 400px;
   text-align: center;
-  box-shadow: 0 8px 15px rgba(0,0,0,0.3);
+  box-shadow: 0 8px 15px rgba(0, 0, 0, 0.3);
   animation: aparecer 0.3s ease-in-out;
 }
 
@@ -230,11 +257,21 @@ h2 {
   font-weight: bold;
   cursor: pointer;
 }
-.cerrar:hover { color: #ff3366; }
+
+.cerrar:hover {
+  color: #ff3366;
+}
 
 @keyframes aparecer {
-  from { transform: scale(0.8); opacity: 0; }
-  to { transform: scale(1); opacity: 1; }
+  from {
+    transform: scale(0.8);
+    opacity: 0;
+  }
+
+  to {
+    transform: scale(1);
+    opacity: 1;
+  }
 }
 
 /* Manito en los títulos de películas */
@@ -242,27 +279,61 @@ h2 {
   cursor: pointer;
   transition: color 0.2s ease;
 }
-#Peliculas-favoritas h3:hover { color: #ff3366; }
+
+#Peliculas-favoritas h3:hover {
+  color: #ff3366;
+}
 
 /* =========================================
    Media Queries (Responsivo)
 ========================================= */
 @media (max-width: 900px) {
-  .container { padding: 0 15px; }
-  .team-cards-lm { gap: 15px; }
-  .team-card-lm, .team-card-lm-music {
+  .container {
+    padding: 0 15px;
+  }
+
+  .team-cards-lm {
+    gap: 15px;
+  }
+
+  .team-card-lm {
     width: 120px;
     padding: 10px;
   }
-  .site-header h1 { font-size: 2rem; }
-  .site-header .subtitle { font-size: 1rem; }
+
+  .site-header h1 {
+    font-size: 2rem;
+  }
+
+  .site-header .subtitle {
+    font-size: 1rem;
+  }
 }
 
 @media (max-width: 400px) {
-  .site-nav a { display: block; margin: 5px 0; }
-  .team-cards-lm { flex-direction: column; gap: 10px; }
-  .team-card-lm, .team-card-lm-music { width: 100%; }
-  .site-header h1 { font-size: 1.5rem; }
-  .site-header .subtitle { font-size: 0.9rem; }
-  .loading-bar-container { width: 80%; }
+  .site-nav a {
+    display: block;
+    margin: 5px 0;
+  }
+
+  .team-cards-lm {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .team-card-lm {
+    width: 100%;
+  }
+
+  .site-header h1 {
+    font-size: 1.5rem;
+  }
+
+  .site-header .subtitle {
+    font-size: 0.9rem;
+  }
+
+  .loading-bar-container {
+    width: 80%;
+  }
 }
