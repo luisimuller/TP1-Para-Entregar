@@ -12,9 +12,9 @@ document.addEventListener("DOMContentLoaded", () => {
     document.body.style.overflow = "";
   }
 
-  // hacer títulos clickeables
+
   titles.forEach(t => {
-    t.setAttribute("tabindex", "0"); // accesible con teclado
+    t.setAttribute("tabindex", "0"); 
     t.setAttribute("role", "button");
     t.addEventListener("click", openModal);
     t.addEventListener("keydown", e => {
