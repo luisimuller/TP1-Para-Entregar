@@ -1,0 +1,201 @@
+/* 🎨 Paleta de colores */
+:root {
+  --amarillo: #FFD700;
+  --negro: #121212;
+  --gris-oscuro: #2c2c2c;
+  --gris-claro: #e0e0e0;
+  --blanco: #ffffff;
+}
+
+/* ⚙️ Estilos generales */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: var(--negro);
+  color: var(--gris-claro);
+  line-height: 1.6;
+}
+
+/* 🔗 Navegación */
+.site-nav {
+  text-align: center;
+  background-color: var(--gris-oscuro);
+  padding: 15px;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+.site-nav a {
+  margin: 0 15px;
+  text-decoration: none;
+  font-weight: bold;
+  color: var(--amarillo);
+  transition: color 0.3s ease;
+}
+.site-nav a:hover {
+  color: var(--blanco);
+  text-decoration: underline;
+}
+
+/* 🏷️ Encabezado */
+.site-header {
+  text-align: center;
+  padding: 50px 20px;
+  background: linear-gradient(135deg, var(--gris-oscuro), var(--negro));
+  color: var(--amarillo);
+}
+.site-header h1 {
+  margin: 0;
+  font-size: 2.5rem;
+}
+.site-header .subtitle {
+  margin-top: 10px;
+  font-size: 1.2rem;
+  font-weight: 300;
+  color: var(--gris-claro);
+}
+
+/* 📊 Barra de carga */
+.loading-bar-container {
+  width: 25%;
+  height: 15px;
+  background: rgba(255, 255, 255, 0.2);
+  margin: 20px auto 0;
+  border-radius: 10px;
+  overflow: hidden;
+}
+.loading-bar-fill {
+  width: 0;
+  height: 100%;
+  background: var(--amarillo);
+  animation: load 3s forwards infinite;
+}
+@keyframes load {
+  to { width: 100%; }
+}
+
+/* 📦 Contenedor principal */
+.container {
+  max-width: 1000px;
+  margin: 40px auto;
+  padding: 0 20px;
+}
+
+section {
+  margin-bottom: 50px;
+}
+
+h2 {
+  color: var(--amarillo);
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+/* 👤 Perfil */
+.profile {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+.profile-img {
+  width: 160px;
+  height: 160px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-bottom: 20px;
+  border: 3px solid var(--amarillo);
+}
+#presentacion p {
+  max-width: 800px;
+  margin: 0 auto 1.2em auto;
+  font-size: 1rem;
+  text-align: justify;
+  color: var(--gris-claro);
+}
+
+/* 🃏 Tarjetas (habilidades, películas, discos) */
+.team-cards-lm {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.team-card-lm,
+.team-card-lm-music {
+  background-color: var(--gris-oscuro);
+  border-radius: 10px;
+  width: 200px;
+  text-align: center;
+  padding: 15px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.6);
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+.team-card-lm:hover,
+.team-card-lm-music:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 16px rgba(0,0,0,0.9);
+}
+
+.team-card-lm img,
+.team-card-lm-music img {
+  width: 100%;
+  height: 140px;
+  object-fit: cover;
+  margin-bottom: 10px;
+  border-radius: 6px;
+}
+
+.team-card-lm h3 {
+  color: var(--amarillo);
+  margin: 10px 0;
+}
+.team-card-lm p {
+  color: var(--gris-claro);
+  font-size: 0.95rem;
+}
+
+.team-card-lm-music {
+  height: 240px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.team-card-lm-music a {
+  display: block;
+  font-weight: bold;
+  color: var(--amarillo);
+  text-decoration: none;
+  transition: color 0.3s;
+}
+.team-card-lm-music a:hover {
+  color: var(--blanco);
+  text-decoration: underline;
+}
+
+/* 📩 Contacto */
+#contacto p {
+  text-align: center;
+  margin: 8px 0;
+}
+#contacto a {
+  color: var(--amarillo);
+  font-weight: bold;
+  text-decoration: none;
+}
+#contacto a:hover {
+  color: var(--blanco);
+  text-decoration: underline;
+}
+
+/* 📌 Footer */
+.site-footer {
+  text-align: center;
+  padding: 20px;
+  background-color: var(--gris-oscuro);
+  color: var(--amarillo);
+  font-size: 0.9rem;
+}
