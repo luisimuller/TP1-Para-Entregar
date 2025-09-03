@@ -37,7 +37,7 @@
                 <section id="presentacion">
 
                     <p>Hey! Llamame Jack, si te atreves a llamar. De todos modos, es probable que no conteste. 
-                        Si quieres de mi tiempo, <b>carga un <a href="http://www.jira.com" target="_blank">TICKET</a></b>. 
+                        Si quieres de mi tiempo, <b>carga un <span id="ticket">TICKET</span></b>. 
                     </p>
 
                     <p>Ya cargaste el ticket? Te aviso cuando tenga la solución. Si aun no lo cargaste, no se qué estas esperando.</p>
@@ -136,6 +136,15 @@
     <footer class="site-footer">
         <p>© 2025 Jack Smith - Perfil Profesional</p>
     </footer>
-</body>
 
+    <!-- Modal -->
+     <div id="modal" class="modal" hidden>
+        <div class="modal-content">
+            <span id="cerrar" class="cerrar">&times;</span>
+            <div id="contentDiv"></div>
+            <div><button class="button yesButton" onclick="openJira()">Sí</button><button class=" button noButton">NO</button></div>
+        </div>
+    </div>
+</body>
+<script src="js/jackpage.js"></script>
 </html>
