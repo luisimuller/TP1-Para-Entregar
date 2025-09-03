@@ -177,6 +177,14 @@ h2 {
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
   transition: transform 0.3s, box-shadow 0.3s;
 }
+.team-card-lm:hover{
+  transform: translateY(-5px);
+  box-shadow: 
+    0 8px 15px rgba(0,0,0,0.9),   /* tu sombra original */
+    0 0 15px #c63ab4,     /* resplandor amarillo */
+    0 0 20px #c63ab4;     /* resplandor más grande */
+    animation: pulseGlow 1s infinite alternate;
+}
 
 .team-card-lm img {
   width: 100%;
@@ -206,9 +214,24 @@ h2 {
   text-decoration: underline;
 }
 
-.team-card-lm:hover {
-  transform: translateY(-5px);
-  box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2);
+
+
+/* =========================================
+   Contacto
+========================================= */
+#contacto p{
+  font-weight: bold;
+  text-align: center;
+  
+}
+#contacto a {
+  color:#f14ca5 ;
+  font-weight: bold;
+  text-decoration: none;
+}
+#contacto a:hover {
+  color: #000;
+  text-decoration: underline;
 }
 
 
@@ -294,6 +317,7 @@ h2 {
 
   .team-cards-lm {
     gap: 15px;
+    
   }
 
   .team-card-lm {
@@ -319,6 +343,7 @@ h2 {
   .team-cards-lm {
     flex-direction: column;
     gap: 10px;
+    margin-right: 20px;
   }
 
   .team-card-lm {
