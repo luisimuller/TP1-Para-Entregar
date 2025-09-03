@@ -119,7 +119,7 @@ h2 {
 .team-cards-lm {
   display: flex;
   flex-wrap: wrap;
-  gap: 20px;
+  gap: 26px;
   justify-content: center;
   margin-top: 20px;
 }
@@ -137,7 +137,26 @@ h2 {
 .team-card-lm:hover,
 .team-card-lm-music:hover {
   transform: translateY(-5px);
-  box-shadow: 0 8px 16px rgba(0,0,0,0.9);
+  box-shadow: 
+    0 8px 15px rgba(0,0,0,0.9),   /* tu sombra original */
+    0 0 15px var(--amarillo),     /* resplandor amarillo */
+    0 0 20px var(--amarillo);     /* resplandor más grande */
+    animation: pulseGlow 1.5s infinite alternate;
+}
+
+@keyframes pulseGlow {
+  from {
+    box-shadow: 
+      0 8px 16px rgba(0,0,0,0.9),
+      0 0 10px var(--amarillo),
+      0 0 20px var(--amarillo);
+  }
+  to {
+    box-shadow: 
+      0 8px 16px rgba(0,0,0,0.9),
+      0 0 25px var(--amarillo),
+      0 0 50px var(--amarillo);
+  }
 }
 
 .team-card-lm img,
