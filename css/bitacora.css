@@ -1,0 +1,90 @@
+/* Timeline principal */
+.timeline {
+  position: relative;
+  max-width: 900px;
+  margin: 50px auto;
+}
+
+/* Línea central */
+.timeline::after {
+  content: '';
+  position: absolute;
+  width: 6px;
+  background-color: var(--color2);
+  top: 0;
+  bottom: 0;
+  left: 50%;
+  margin-left: -3px;
+}
+
+/* Cada entrada */
+.entrada {
+  padding: 20px 40px;
+  position: relative;
+  width: 50%;
+}
+
+/* Contenido dentro de cada entrada */
+.entrada .content {
+  padding: 20px;
+  background-color: var(--color5);
+  position: relative;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+}
+
+/* Fecha */
+.entrada .fecha {
+  font-weight: bold;
+  color: var(--color1);
+  display: block;
+  margin-bottom: 10px;
+}
+
+/* Posiciones */
+.entrada.left {
+  left: 0;
+}
+
+.entrada.right {
+  left: 50%;
+}
+
+/* Círculos en la línea */
+.entrada::before {
+  content: '';
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  right: -10px;
+  background-color: var(--color1);
+  border: 3px solid var(--color3);
+  top: 25px;
+  border-radius: 50%;
+  z-index: 1;
+}
+
+.entrada.right::before {
+  left: -10px;
+}
+
+/* Responsivo */
+@media screen and (max-width: 768px) {
+  .timeline::after {
+    left: 20px;
+  }
+
+  .entrada {
+    width: 100%;
+    padding-left: 60px;
+    padding-right: 25px;
+  }
+
+  .entrada.right {
+    left: 0%;
+  }
+
+  .entrada::before {
+    left: 10px;
+  }
+}
