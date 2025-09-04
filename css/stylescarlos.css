@@ -1,20 +1,28 @@
 /* Títulos de sección llamativos */
+/* Títulos de sección llamativos con fuente Bangers */
 h2.about-me,
 h2.my-works,
 #contacto h2 {
-  font-family: 'Bebas Neue', Arial, sans-serif;
+  font-family: 'Bangers', cursive, Arial, sans-serif;
   color: #2e4d1c;
   letter-spacing: 2px;
   text-transform: uppercase;
-  font-size: 2.2rem;
+  font-size: 2.1rem;
   margin-bottom: 24px;
+  text-shadow: 2px 2px 0 #b6d99c, 0 4px 12px #4B5D4B;
 }
 /* Separación extra para los títulos de secciones */
+/* Más espacio superior y separación para títulos de secciones */
 #Peliculas-favoritas .my-works {
+  margin-top: 170px;
   margin-bottom: 70px;
 }
 #Bandas-favoritas .my-works {
+  margin-top: 110px;
   margin-bottom: 70px;
+}
+#contacto h2 {
+  margin-top: 110px;
 }
 /* Separación extra para el título de habilidades */
 #Habilidades .my-works {
@@ -44,6 +52,8 @@ body {
   margin: 0;
   padding: 0;
   background: linear-gradient(135deg, #b6d99c 0%, #2e4d1c 100%);
+  opacity: 0;
+  transition: opacity 1.2s ease;
 }
 
 a {
@@ -89,7 +99,7 @@ p {
 }
 .site-header h1 {
   margin: 0;
-  font-size: 2.5rem;
+  font-size: 3.8rem;
   font-family: 'Pacifico', cursive;
   text-shadow: 0 2px 8px #2e4d1c, 0 0 12px #b6d99c;
 }
