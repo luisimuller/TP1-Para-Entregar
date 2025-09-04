@@ -181,13 +181,15 @@ h2 {
 .team-cards-lm {
   display: flex;
   flex-wrap: wrap;
-  gap: 40px;
+  gap: 60px;
   justify-content: center;
   margin-top: 20px;
+  position: relative;
 }
 
 .team-card-lm,
 .team-card-lm-music {
+  overflow: visible;
   background-color: #b6d99c;
   border-radius: 12px;
   width: 150px;
@@ -195,6 +197,7 @@ h2 {
   box-shadow: 0 4px 8px rgba(46,77,28,0.6);
   transition: transform 0.3s, box-shadow 0.3s;
   color: #2e4d1c; /* Verde musgo para el texto */
+  position: relative;
 }
 
 .team-card-lm:hover,
@@ -239,6 +242,7 @@ h2 {
   font-weight: bold;
   color: #2e4d1c;
   text-decoration: none;
+  position: static;
 }
 
 .team-card-lm a:hover,
@@ -272,22 +276,22 @@ h2 {
 .custom-tooltip {
   opacity: 0;
   visibility: hidden;
-  position: absolute;
-  left: 50%;
-  top: 110%;
-  transform: translateX(-50%) translateY(10px);
-  background: #fffbe6;
+  position: fixed;
+  left: 70%;
+  top: 80%;
+  transform: translate(-50%, -50%) scale(0.8);
+  min-width: 160px;
+  max-width: 220px;
+  background: rgba(182, 217, 156, 0.95);
   color: #2e4d1c;
   border: 1px solid #4B5D4B; /* Verde grisáceo moderno */
   border-radius: 8px;
   box-shadow: 0 2px 8px rgba(46,77,28,0.15);
   padding: 14px 18px;
-  width: 320px;
-  z-index: 200;
-  font-size: 1rem;
+  z-index: 9999;
   text-align: left;
   pointer-events: none;
-  transition: opacity 0.35s cubic-bezier(.4,0,.2,1), transform 0.35s cubic-bezier(.4,0,.2,1), visibility 0.35s;
+  transition: opacity 0.7s cubic-bezier(.4,0,.2,1), transform 0.7s cubic-bezier(.4,0,.2,1), visibility 0.7s, box-shadow 0.7s;
 }
 .tooltip-router:hover .custom-tooltip,
 .tooltip-redes:hover .custom-tooltip,
@@ -295,7 +299,8 @@ h2 {
 .tooltip-seguridad:hover .custom-tooltip {
   opacity: 1;
   visibility: visible;
-  transform: translateX(-50%) translateY(0);
+  transform: translate(-50%, -50%) scale(1);
+  box-shadow: 0 8px 24px #b6ffd9, 0 2px 8px rgba(46,77,28,0.25);
   pointer-events: auto;
 }
 
