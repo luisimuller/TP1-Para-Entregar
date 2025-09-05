@@ -11,7 +11,7 @@
    Estilos generales
 ========================================= */
 body {
-  font-family: Arial, sans-serif;
+  font-family: "Quantico",Arial, sans-serif;
   margin: 0;
   padding: 0;
   background-color: #181717;
@@ -55,8 +55,9 @@ p {
   color: white;
 }
 .site-header h1 {
-  margin: 0;
-  font-size: 2.5rem;
+    font-family: "Audiowide", sans-serif;
+    margin: 0;
+    font-size: 2.5rem;
 }
 .site-header .subtitle {
   margin-top: 10px;
@@ -102,6 +103,7 @@ section {
 }
 
 h2 {
+    font-family: "Press Start 2P", system-ui;;
   color: #fcfcfc;
   margin-bottom: 15px;
 }
@@ -149,6 +151,11 @@ h2 {
   gap: 20px;
   justify-content: center;
   margin-top: 20px;
+}
+
+.team-card-lm p {
+    font-size: 1em;
+    max-height: 45%;
 }
 
 .team-card-lm,
@@ -310,6 +317,16 @@ h2 {
     gap: 15px;
   }
 
+  .team-card-lm p {
+    font-size: 0.6em;
+    max-height: 45%;
+}
+
+.team-card-lm h3 {
+    font-size: 1em;
+    max-height: 45%;
+}
+
   .team-card-lm,
   .team-card-lm-music {
     width: 120px;
@@ -336,6 +353,11 @@ h2 {
     flex-direction: column;
     gap: 10px;
   }
+
+  .team-card-lm h3 {
+    font-size: 1em;
+    max-height: 45%;
+}
 
   .team-card-lm,
   .team-card-lm-music {
