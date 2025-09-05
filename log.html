@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bitácora - NextHire Devs</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/bitacora.css">
+</head>
+
+<body>
+    <div id="filtroButton" onclick="toggleFiltro()">
+        <span>Lights OFF</span>
+        <img id="lightswitch" src="img/lightoff.png" alt="Off lightbulb" />
+    </div>
+    <div id="filtro"></div>
+
+    <!-- Navegación -->
+    <nav class="site-nav">
+        <ul>
+            <li><a href="index.html">Inicio</a></li>
+            <li><a href="index.html#presentacion">Sobre Nosotros</a></li>
+            <li><a href="index.html#integrantes">Integrantes</a></li>
+            <li><a href="index.html#contacto">Contacto</a></li>
+            <li><a href="log.html" class="active">Bitácora</a></li>
+        </ul>
+    </nav>
+
+    <!-- Encabezado -->
+    <header class="site-header">
+        <h1>Bitácora</h1>
+        <p class="subtitle">Registro de avances del equipo NextHire Devs</p>
+    </header>
+
+    <!-- Contenido principal -->
+    <main class="container">
+        <section class="bitacora">
+            <h2>Entradas</h2>
+
+            <div class="timeline">
+
+                <div class="entrada left">
+                    <div class="content">
+                        <span class="fecha">📅 Día 1 (01/09/2025)</span>
+                        <p>
+                            El equipo se reunió el mismo día en que se publicó la consigna del trabajo práctico para
+                            definir la metodología de trabajo.
+                            Se decidió que uno de los integrantes sería el encargado de crear un repositorio con una
+                            rama principal y
+                            una rama personal para cada miembro del grupo. Además, se acordó el diseño de la portada del
+                            proyecto. <br><br>
+                            Inicialmente, se comenzó a trabajar en un repositorio diferente, con un proyecto basado en
+                            nuestras identidades reales.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="entrada right">
+                    <div class="content">
+                        <span class="fecha">📅 Día 2</span>
+                        <p>
+                            Se decidió cambiar el repositorio al comprender que el proyecto debía ser ficticio.
+                            Todos los avances fueron migrados al repositorio actual.
+                            Cada integrante comenzó a trabajar en su página de manera individual. Subiendo cada cambio a
+                            su rama y solicitando un pull request
+                        </p>
+                    </div>
+                </div>
+
+                <div class="entrada left">
+                    <div class="content">
+                        <span class="fecha">📅 Días 3 y 4</span>
+                        <p>
+                            Cada integrante continuó trabajando en su página personal, siguiendo los requerimientos
+                            establecidos en la consigna
+                            del trabajo práctico, logrando finalizar la página completa.
+                        </p>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="site-footer">
+        <p>© 2025 Equipo NextHire Devs - Proyecto académico</p>
+    </footer>
+
+    <script src="js/index.js" defer></script>
+</body>
+
+</html>

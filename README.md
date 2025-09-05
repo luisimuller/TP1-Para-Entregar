@@ -1,10 +1,23 @@
 # TP1-Para-Entregar
-Inicialmente se comenzó a trabajar en un repositorio diferente, con un proyecto basado en 
-nuestras identidades reales, al comprender que el proyecto a para entregar debia ser ficticio se migraron todos los avances al repositorio actual.
 
-Se establecio un formato base para las páginas de los Integrantes y se comenzó a trabajar en las mismas, utilizando cada desarrollador su rama personal y generando pull request a main.
+Equipo: 
 
-Funcionalidad utilizando JS
+Título Proyecto: NextHire - Devs
+
+Descripción:
+
+Tecnologías:
+- HTML
+- CSS
+- JavaScript
+
+Host:
+
+Estructura de Archivos:
+
+
+Funcionalidad utilizando JS:
 - Filtro para atenuar luminosidad (Index)
+- Drag and Drop de Tarjetas Habilidades (Página Personal Erwin Schrödinger)
 - Manejo de Modals (Página Personal Lola Sparrow)
 - Tranformación dinámica de botón (apodado el 'Lazy Button') (Página Personal Jack Smith)

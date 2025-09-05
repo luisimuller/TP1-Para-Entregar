@@ -1,76 +1,92 @@
-/* Colores personalizados */
-.color1 {color: #1b4965;}
-.color2 {color: #62b6cb;}
-.color3 {color: #5fa8d3;}
-.color4 {color: #bee9e8;}
-.color5 {color: #cae9ff;}
-
-/* Estilos generales */
-body {
-  font-family: Arial, sans-serif;
-  margin: 0;
-  padding: 0;
-  background-color: #fff0f5;
+/* 🎨 Paleta de colores en azules */
+:root {
+  --azul-oscuro: #0d1b2a;
+  --azul-medio: #1b263b;
+  --azul: #415a77;
+  --celeste: #778da9;
+  --blanco-azulado: #e0e9f1;
 }
 
-/* Navegación */
+/* ⚙️ Estilos generales */
+body {
+  font-family: "Segoe UI", Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: var(--azul-oscuro);
+  color: var(--blanco-azulado);
+  line-height: 1.6;
+}
+
+/* 🔗 Navegación */
 .site-nav {
   text-align: center;
-  background-color: #cae9ff;
+  background-color: var(--azul-medio);
   padding: 15px;
-    position: sticky;
+  position: sticky;
   top: 0;
   z-index: 100;
 }
+
 .site-nav a {
   margin: 0 15px;
   text-decoration: none;
-  font-weight: bold;
-  color: #1b4965;
+  font-weight: 600;
+  color: var(--celeste);
+  transition: color 0.3s ease;
 }
+
 .site-nav a:hover {
+  color: var(--blanco-azulado);
   text-decoration: underline;
 }
 
-/* Encabezado */
+/* 🏷️ Encabezado */
 .site-header {
   text-align: center;
   padding: 50px 20px;
-  background: linear-gradient(135deg, #1b4965, #5fa8d3);
-  color: white;
+  background: linear-gradient(135deg, var(--azul-medio), var(--azul-oscuro));
+  color: var(--celeste);
 }
+
 .site-header h1 {
   margin: 0;
   font-size: 2.5rem;
+  color: var(--blanco-azulado);
 }
+
 .site-header .subtitle {
   margin-top: 10px;
   font-size: 1.2rem;
   font-weight: 300;
+  color: var(--celeste);
 }
 
-/* Barra de carga animada */
+/* 📊 Barra de carga */
 .loading-bar-container {
   width: 25%;
   height: 15px;
-  background: rgba(255,255,255,0.3);
+  background: rgba(255, 255, 255, 0.15);
   margin: 20px auto 0;
   border-radius: 10px;
   overflow: hidden;
 }
+
 .loading-bar-fill {
   width: 0;
   height: 100%;
-  background: #5fa8d3;
+  background: var(--celeste);
   animation: load 3s forwards infinite;
 }
+
 @keyframes load {
-  to { width: 100%; }
+  to {
+    width: 100%;
+  }
 }
 
-/* Contenedor principal */
+/* 📦 Contenedor principal */
 .container {
-  max-width: 900px;
+  max-width: 1000px;
   margin: 40px auto;
   padding: 0 20px;
 }
@@ -80,94 +96,152 @@ section {
 }
 
 h2 {
-  color: #1b4965;
-  margin-bottom: 15px;
+  color: var(--celeste);
+  margin-bottom: 20px;
+  text-align: center;
 }
 
-a {
-  color: #1b4965;
-}
-a:hover {
-  text-decoration: underline;
-}
-
-/* Perfil */
+/* 👤 Perfil */
 .profile {
   display: flex;
   flex-direction: column;
   align-items: center;
   text-align: center;
 }
-#presentacion p {
-  line-height: 1.7;       /* Espacio entre líneas */
-  font-size: 1rem;        /* Tamaño cómodo para leer */
-  margin-bottom: 1.2em;   /* Separación entre párrafos */
-  text-align: justify;     /* Opcional: justificado para estilo profesional */
-  max-width: 800px;        /* Limita el ancho del texto */
-  margin-left: auto;       
-  margin-right: auto;
-  color: #333;            /* Contraste legible sobre fondo */
-}
+
 .profile-img {
-  width: 150px;
-  height: 150px;
+  width: 160px;
+  height: 160px;
   border-radius: 50%;
   object-fit: cover;
   margin-bottom: 20px;
-}
-.about-me {
-    text-align: center;
-}
-.my-works{
-   text-align: center; 
+  border: 3px solid var(--celeste);
 }
 
+#presentacion p {
+  max-width: 800px;
+  margin: 0 auto 1.2em auto;
+  font-size: 1rem;
+  text-align: justify;
+  color: var(--blanco-azulado);
+}
+#Habilidades p {
+  max-width: 800px;
+  margin: 0 auto 1.2em auto;
+  font-size: 1rem;
+  text-align: center;
+  color: var(--gris-claro);
+}
+
+/* 🃏 Tarjetas (habilidades, películas, discos) */
 .team-cards-lm {
   display: flex;
   flex-wrap: wrap;
-  gap: 20px;
+  gap: 26px;
   justify-content: center;
   margin-top: 20px;
 }
 
-.team-card-lm {
-  background-color: #1b4965;
-  border-radius: 10px;
-  width: 150px;
-  color: white;
+.team-card-lm,
+.team-card-lm-music {
+  background-color: var(--azul-medio);
+  border-radius: 12px;
+  width: 200px;
   text-align: center;
   padding: 15px;
-  box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.6);
   transition: transform 0.3s, box-shadow 0.3s;
 }
 
-.team-card-.team-card-lm {
+.team-card-lm:hover,
+.team-card-lm-music:hover {
   transform: translateY(-5px);
-  box-shadow: 0 8px 12px rgba(0,0,0,0.2);
+  box-shadow: 0 8px 15px rgba(0, 0, 0, 0.9),
+    0 0 15px var(--celeste),
+    0 0 25px var(--celeste);
+  animation: pulseGlow 1.5s infinite alternate;
 }
 
-.team-card-lm img {
+@keyframes pulseGlow {
+  from {
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.9),
+      0 0 10px var(--celeste),
+      0 0 20px var(--celeste);
+  }
+  to {
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.9),
+      0 0 20px var(--celeste),
+      0 0 40px var(--celeste);
+  }
+}
+
+.team-card-lm img,
+.team-card-lm-music img {
   width: 100%;
-  border-radius: 0%;
   object-fit: cover;
   margin-bottom: 10px;
+  border-radius: 6px;
+  border: 1px solid var(--celeste);
+  transition: border-color 0.3s ease;
 }
 
-.team-card-lm a {
+.team-card-lm:hover img,
+.team-card-lm-music:hover img {
+  border-color: var(--blanco-azulado); /* cambia de celeste a blanco azulado en hover */
+}
+
+.team-card-lm h3 {
+  color: var(--celeste);
+  margin: 10px 0;
+}
+
+.team-card-lm p {
+  color: var(--blanco-azulado);
+  font-size: 0.95rem;
+}
+
+.team-card-lm-music {
+  height: 240px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.team-card-lm-music a {
   display: block;
   font-weight: bold;
-  color: #000000;
+  color: var(--celeste);
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+.team-card-lm-music a:hover {
+
+  color: var(--blanco-azulado);
+  text-decoration: underline;
+}
+/* 📩 Contacto */
+#contacto p {
+  text-align: center;
+  margin: 8px 0;
+}
+
+#contacto a {
+  color: var(--celeste);
+  font-weight: bold;
   text-decoration: none;
 }
 
-.team-card-lm a:hover {
+#contacto a:hover {
+  color: var(--blanco-azulado);
   text-decoration: underline;
 }
 
-/* Footer */
+/* 📌 Footer */
 .site-footer {
   text-align: center;
   padding: 20px;
-  background-color: #cae9ff;
-  color: #1b4965;
+  background-color: var(--azul-medio);
+  color: var(--celeste);
+  font-size: 0.9rem;
 }

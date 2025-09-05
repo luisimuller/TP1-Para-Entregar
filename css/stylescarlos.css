@@ -1,0 +1,384 @@
+/* Títulos de sección llamativos */
+/* Títulos de sección llamativos con fuente Bangers */
+h2.about-me,
+h2.my-works,
+#contacto h2 {
+  font-family: 'Bangers', cursive, Arial, sans-serif;
+  color: #2e4d1c;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  font-size: 2.1rem;
+  margin-bottom: 24px;
+  text-shadow: 2px 2px 0 #b6d99c, 0 4px 12px #4B5D4B;
+}
+/* Separación extra para los títulos de secciones */
+/* Más espacio superior y separación para títulos de secciones */
+#Peliculas-favoritas .my-works {
+  margin-top: 170px;
+  margin-bottom: 70px;
+}
+#Bandas-favoritas .my-works {
+  margin-top: 110px;
+  margin-bottom: 70px;
+}
+#contacto h2 {
+  margin-top: 110px;
+}
+/* Separación extra para el título de habilidades */
+#Habilidades .my-works {
+  margin-bottom: 70px;
+}
+/* Centrado de texto en los box */
+.team-card-lm p,
+.team-card-lm-music p,
+.team-card-lm h3,
+.team-card-lm-music h3 {
+  text-align: center;
+}
+/* =========================================
+   Colores personalizados
+========================================= */
+.color1 { color: #e0ffe0; } /* Verde claro */
+.color2 { color: #2e4d1c; } /* Verde musgo */
+.color3 { color: #4B5D4B; } /* Verde grisáceo moderno */
+.color4 { color: #2C3E2C; } /* Verde gris oscuro */
+.color5 { color: #b6d99c; } /* Verde pasto */
+
+/* =========================================
+   Estilos generales
+========================================= */
+body {
+  font-family: 'Montserrat', Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background: linear-gradient(135deg, #b6d99c 0%, #2e4d1c 100%);
+  opacity: 0;
+  transition: opacity 1.2s ease;
+}
+
+a {
+  color: #2e4d1c;
+  text-decoration: none;
+  font-weight: bold;
+}
+a:hover {
+  color: #7a5c2e;
+  text-decoration: underline;
+}
+
+p {
+    color: #2e4d1c;
+}
+/* =========================================
+   Navegación
+========================================= */
+.site-nav {
+  text-align: center;
+  background-color: #4B5D4B; /* Verde grisáceo moderno */
+  padding: 15px;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  box-shadow: 0 2px 8px rgba(46,77,28,0.2);
+}
+.site-nav a {
+  margin: 0 15px;
+  font-weight: bold;
+  color: #e0ffe0;
+}
+
+/* =========================================
+   Encabezado
+========================================= */
+.site-header {
+  text-align: center;
+  padding: 50px 20px;
+  background: linear-gradient(135deg, #b6d99c 0%, #4B5D4B 100%); /* Degradado verde claro a verde grisáceo */
+  color: #2e4d1c;
+  border-bottom: 4px solid #4B5D4B; /* Verde grisáceo moderno */
+}
+.site-header h1 {
+  margin: 0;
+  font-size: 3.8rem;
+  font-family: 'Pacifico', cursive;
+  text-shadow: 0 2px 8px #2e4d1c, 0 0 12px #b6d99c;
+}
+.site-header .subtitle {
+  margin-top: 10px;
+  font-size: 1.2rem;
+  font-weight: 300;
+  font-family: 'Bebas Neue', Arial, sans-serif;
+  font-family: 'Bebas Neue', Arial, sans-serif;
+}
+
+/* =========================================
+   Barra de carga animada
+========================================= */
+.loading-bar-container {
+  width: 25%;
+  height: 15px;
+  background: rgba(46,77,28,0.2);
+  margin: 20px auto 0;
+  border-radius: 10px;
+  overflow: hidden;
+}
+.loading-bar-fill {
+  width: 0;
+  height: 100%;
+  background: #88ff82;
+  animation: load 3s forwards infinite;
+}
+@keyframes load {
+    from {width: 100%; background-color: #2e4d1c;}
+    to { width: 0%; background-color: #b6d99c;}
+}
+
+/* =========================================
+   Contenedor principal y secciones
+========================================= */
+.container {
+  max-width: 900px;
+  margin: 40px auto;
+  padding: 0 20px;
+}
+
+section {
+  margin-bottom: 50px;
+}
+
+h2 {
+  color: #2e4d1c;
+  margin-bottom: 15px;
+}
+
+/* =========================================
+   Perfil
+========================================= */
+.profile {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+#presentacion p {
+  line-height: 1.7;
+  font-size: 1rem;
+  margin-bottom: 1.2em;
+  text-align: justify;
+  max-width: 800px;
+  margin-left: auto;
+  margin-right: auto;
+  color: #2e4d1c;
+}
+
+.profile-img {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-bottom: 20px;
+}
+
+.about-me,
+.my-works {
+  text-align: center;
+}
+
+/* =========================================
+   Tarjetas del equipo
+========================================= */
+.team-cards-lm {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 60px;
+  justify-content: center;
+  margin-top: 20px;
+  position: relative;
+}
+
+.team-card-lm,
+.team-card-lm-music {
+  overflow: visible;
+  background-color: #b6d99c;
+  border-radius: 12px;
+  width: 150px;
+  padding: 15px;
+  box-shadow: 0 4px 8px rgba(46,77,28,0.6);
+  transition: transform 0.3s, box-shadow 0.3s;
+  color: #2e4d1c; /* Verde musgo para el texto */
+  position: relative;
+}
+
+.team-card-lm:hover,
+.team-card-lm-music:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 15px rgba(0, 0, 0, 0.9),
+    0 0 15px #e0ffe0,
+    0 0 20px #ffffff,
+    0 0 30px #b6ffd9;
+  animation: pulseGlowGreen 1.5s infinite alternate;
+}
+
+@keyframes pulseGlowGreen {
+  from {
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.9),
+      0 0 15px #e0ffe0,
+      0 0 20px #ffffff,
+      0 0 30px #b6ffd9;
+  }
+  to {
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.9),
+      0 0 20px #e0ffe0,
+      0 0 40px #ffffff,
+      0 0 60px #b6ffd9;
+  }
+}
+
+.team-card-lm img,
+.team-card-lm-music img {
+  width: 100%;
+  height: 120px;
+  object-fit: contain;
+  border-radius: 8px;
+  margin-bottom: 10px;
+  border: 3px solid #2e4d1c; /* marco verde musgo */
+  background: #e0ffe0; /* fondo claro para contraste */
+}
+
+.team-card-lm a,
+.team-card-lm-music a {
+  display: block;
+  font-weight: bold;
+  color: #2e4d1c;
+  text-decoration: none;
+  position: static;
+}
+
+.team-card-lm a:hover,
+.team-card-lm-music a:hover {
+  text-decoration: underline;
+}
+
+.team-card-lm:hover,
+.team-card-lm-music:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 12px rgba(46,77,28,0.2);
+}
+
+.team-card-lm-music {
+  height: 200px;
+}
+
+/* Tooltip personalizado para la primera tarjeta Router */
+.tooltip-router {
+  position: relative;
+}
+.tooltip-redes {
+  position: relative;
+}
+.tooltip-sistemas {
+  position: relative;
+}
+.tooltip-seguridad {
+  position: relative;
+}
+.custom-tooltip {
+  opacity: 0;
+  visibility: hidden;
+  position: fixed;
+  left: 70%;
+  top: 80%;
+  transform: translate(-50%, -50%) scale(0.8);
+  min-width: 160px;
+  max-width: 220px;
+  background: rgba(182, 217, 156, 0.95);
+  color: #2e4d1c;
+  border: 1px solid #4B5D4B; /* Verde grisáceo moderno */
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(46,77,28,0.15);
+  padding: 14px 18px;
+  z-index: 9999;
+  text-align: left;
+  pointer-events: none;
+  transition: opacity 0.7s cubic-bezier(.4,0,.2,1), transform 0.7s cubic-bezier(.4,0,.2,1), visibility 0.7s, box-shadow 0.7s;
+}
+.tooltip-router:hover .custom-tooltip,
+.tooltip-redes:hover .custom-tooltip,
+.tooltip-sistemas:hover .custom-tooltip,
+.tooltip-seguridad:hover .custom-tooltip {
+  opacity: 1;
+  visibility: visible;
+  transform: translate(-50%, -50%) scale(1);
+  box-shadow: 0 8px 24px #b6ffd9, 0 2px 8px rgba(46,77,28,0.25);
+  pointer-events: auto;
+}
+
+/* =========================================
+   Footer
+========================================= */
+.site-footer {
+  text-align: center;
+  padding: 20px;
+  background-color: #4B5D4B; /* Verde grisáceo moderno */
+  color: #e0ffe0;
+}
+
+/* =========================================
+   Media Queries (Responsivo)
+========================================= */
+
+/* Tablets / pantallas medianas ≤900px */
+@media (max-width: 900px) {
+  .container {
+    padding: 0 15px;
+  }
+
+  .team-cards-lm {
+    gap: 15px;
+  }
+
+  .team-card-lm,
+  .team-card-lm-music {
+    width: 120px;
+    padding: 10px;
+  }
+
+  .site-header h1 {
+    font-size: 2rem;
+  }
+
+  .site-header .subtitle {
+    font-size: 1rem;
+  }
+}
+
+/* Móviles pequeños ≤400px */
+@media (max-width: 400px) {
+  .site-nav a {
+    display: block;
+    margin: 5px 0;
+  }
+
+  .team-cards-lm {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .team-card-lm,
+  .team-card-lm-music {
+    width: 100%;
+  }
+
+  .site-header h1 {
+    font-size: 1.5rem;
+  }
+
+  .site-header .subtitle {
+    font-size: 0.9rem;
+  }
+
+  .loading-bar-container {
+    width: 80%;
+  }
+}
