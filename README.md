@@ -14,8 +14,8 @@ Grupo 1
 NextHire - Devs
 
 ## Descripción
-Entrega del primer trabajo práctico para la materia de Front End de 2do año la carrera Tecnicatura Superior en Desarrollo de Software del Instituto Superior de Formación Técnica Nro. 29 (CABA).
-En este primer proyecto aplicamos conocimientos de HTML, CSS y JavaScript para el desarrollo de una pagina web que nos permitiera presentar el equipo de trabajo, incluyendo páginas personales (página individual) para cada integrante y una páginad de bitácora, donde se registró las decisiones y avances del proyecto.
+Entrega del Primer Trabajo Práctico para la materia de Front End de 2º año la carrera Tecnicatura Superior en Desarrollo de Software del Instituto Superior de Formación Técnica Nro. 29 (CABA).
+En este primer proyecto aplicamos conocimientos de HTML, CSS y JavaScript para el desarrollo de una pagina web que nos permitiera presentar el equipo de trabajo, incluyendo páginas personales (página individual) para cada integrante y una página de bitácora, donde se registró las decisiones y avances del proyecto.
 
 ## Tecnologías
 - HTML
