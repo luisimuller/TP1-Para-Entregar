@@ -1,4 +1,4 @@
-/* 🎨 Paleta de colores en azules */
+/* Paleta de colores en azules */
 :root {
   --azul-oscuro: #0d1b2a;
   --azul-medio: #1b263b;
@@ -7,7 +7,7 @@
   --blanco-azulado: #e0e9f1;
 }
 
-/* ⚙️ Estilos generales */
+/* Estilos generales */
 body {
   font-family: "Segoe UI", Arial, sans-serif;
   margin: 0;
@@ -17,7 +17,7 @@ body {
   line-height: 1.6;
 }
 
-/* 🔗 Navegación */
+/* Navegación */
 .site-nav {
   text-align: center;
   background-color: var(--azul-medio);
@@ -40,7 +40,7 @@ body {
   text-decoration: underline;
 }
 
-/* 🏷️ Encabezado */
+/* Encabezado */
 .site-header {
   text-align: center;
   padding: 50px 20px;
@@ -84,7 +84,7 @@ body {
   }
 }
 
-/* 📦 Contenedor principal */
+/* Contenedor principal */
 .container {
   max-width: 1000px;
   margin: 40px auto;
@@ -101,7 +101,7 @@ h2 {
   text-align: center;
 }
 
-/* 👤 Perfil */
+/* Perfil */
 .profile {
   display: flex;
   flex-direction: column;
@@ -133,7 +133,7 @@ h2 {
   color: var(--gris-claro);
 }
 
-/* 🃏 Tarjetas (habilidades, películas, discos) */
+/* Tarjetas */
 .team-cards-lm {
   display: flex;
   flex-wrap: wrap;
@@ -187,8 +187,17 @@ h2 {
 
 .team-card-lm:hover img,
 .team-card-lm-music:hover img {
-  border-color: var(--blanco-azulado); /* cambia de celeste a blanco azulado en hover */
+  border-color: var(--blanco-azulado);
 }
+
+.team-card-lm {
+  cursor: grab;
+}
+
+.team-card-lm:active {
+  cursor: grabbing;
+}
+
 
 .team-card-lm h3 {
   color: var(--celeste);
@@ -220,7 +229,7 @@ h2 {
   color: var(--blanco-azulado);
   text-decoration: underline;
 }
-/* 📩 Contacto */
+/* Contacto */
 #contacto p {
   text-align: center;
   margin: 8px 0;
@@ -237,7 +246,7 @@ h2 {
   text-decoration: underline;
 }
 
-/* 📌 Footer */
+/* Footer */
 .site-footer {
   text-align: center;
   padding: 20px;
