@@ -25,16 +25,16 @@ En este primer proyecto aplicamos conocimientos de HTML, CSS y JavaScript para e
 ## Host
 
 ## Estructura de Archivos
-├── css/ # Hojas de estilo (CSS)
-├── img/ # Imágenes del proyecto
-├── js/ # Archivos JavaScript
-├── carlos_harddrive.html # Página de Carlos Harddrive
-├── erwinschrodinger.html # Página de Erwin Schrödinger
-├── gregorykarta.html # Página de Gregory Karta
-├── index.html # Página principal
-├── jacksmith.html # Página de Jack Smith
-├── log.html # Página de log
-├── lolamento.html # Página de Lolamento
+├── css/ # Hojas de estilo (CSS)\
+├── img/ # Imágenes del proyecto\
+├── js/ # Archivos JavaScript\
+├── carlos_harddrive.html # Página de Carlos Harddrive\
+├── erwinschrodinger.html # Página de Erwin Schrödinger\
+├── gregorykarta.html # Página de Gregory Karta\
+├── index.html # Página principal\
+├── jacksmith.html # Página de Jack Smith\
+├── log.html # Página de log\
+├── lolamento.html # Página de Lolamento\
 └── README.md # Documentación del proyecto
 
 ## Funcionalidad utilizando JS
