@@ -21,3 +21,4 @@ Funcionalidad utilizando JS:
 - Drag and Drop de Tarjetas Habilidades (Página Personal Erwin Schrödinger)
 - Manejo de Modals (Página Personal Lola Sparrow)
 - Tranformación dinámica de botón (apodado el 'Lazy Button') (Página Personal Jack Smith)
+- lazers flash and buzz effect (Página Personal Gregory Karta)
