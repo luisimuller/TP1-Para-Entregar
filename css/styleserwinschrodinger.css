@@ -216,10 +216,10 @@ h2 {
 }
 
 .team-card-lm-music a:hover {
+
   color: var(--blanco-azulado);
   text-decoration: underline;
 }
-
 /* 📩 Contacto */
 #contacto p {
   text-align: center;

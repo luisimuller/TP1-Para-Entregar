@@ -1,20 +1,70 @@
+/* Títulos de sección llamativos */
+/* Títulos de sección llamativos con fuente Bangers */
+h2.about-me,
+h2.my-works {
+  font-family: 'Bangers', cursive, Arial, sans-serif;
+  color: #2e4d1c;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  font-size: 2.1rem;
+  margin-bottom: 24px;
+  text-shadow: 2px 2px 0 #b6d99c, 0 4px 12px #4B5D4B;
+  text-align: center;
+}
+#contacto h2 {
+  font-family: 'Bangers', cursive, Arial, sans-serif;
+  color: #2e4d1c;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  font-size: 2.1rem;
+  margin-bottom: 24px;
+  text-shadow: 2px 2px 0 #b6d99c, 0 4px 12px #4B5D4B;
+  margin-top: 110px;
+  text-align: left;
+}
+/* Separación extra para los títulos de secciones */
+/* Más espacio superior y separación para títulos de secciones */
+#Peliculas-favoritas .my-works {
+  margin-top: 170px;
+  margin-bottom: 70px;
+}
+#Bandas-favoritas .my-works {
+  margin-top: 110px;
+  margin-bottom: 70px;
+}
+#contacto h2 {
+  margin-top: 110px;
+}
+/* Separación extra para el título de habilidades */
+#Habilidades .my-works {
+  margin-bottom: 70px;
+}
+/* Centrado de texto en los box */
+.team-card-lm p,
+.team-card-lm-music p,
+.team-card-lm h3,
+.team-card-lm-music h3 {
+  text-align: center;
+}
 /* =========================================
    Colores personalizados
 ========================================= */
 .color1 { color: #e0ffe0; } /* Verde claro */
 .color2 { color: #2e4d1c; } /* Verde musgo */
-.color3 { color: #7a5c2e; } /* Marrón claro */
-.color4 { color: #3b2f1c; } /* Marrón oscuro */
+.color3 { color: #4B5D4B; } /* Verde grisáceo moderno */
+.color4 { color: #2C3E2C; } /* Verde gris oscuro */
 .color5 { color: #b6d99c; } /* Verde pasto */
 
 /* =========================================
    Estilos generales
 ========================================= */
 body {
-  font-family: Arial, sans-serif;
+  font-family: 'Montserrat', Arial, sans-serif;
   margin: 0;
   padding: 0;
   background: linear-gradient(135deg, #b6d99c 0%, #2e4d1c 100%);
+  opacity: 0;
+  transition: opacity 1.2s ease;
 }
 
 a {
@@ -35,7 +85,7 @@ p {
 ========================================= */
 .site-nav {
   text-align: center;
-  background-color: #7a5c2e;
+  background-color: #4B5D4B; /* Verde grisáceo moderno */
   padding: 15px;
   position: sticky;
   top: 0;
@@ -54,25 +104,28 @@ p {
 .site-header {
   text-align: center;
   padding: 50px 20px;
-  background: linear-gradient(135deg, #b6d99c 0%, #2e4d1c 100%);
+  background: linear-gradient(135deg, #b6d99c 0%, #4B5D4B 100%); /* Degradado verde claro a verde grisáceo */
   color: #2e4d1c;
-  border-bottom: 4px solid #7a5c2e;
+  border-bottom: 4px solid #4B5D4B; /* Verde grisáceo moderno */
 }
 .site-header h1 {
   margin: 0;
-  font-size: 2.5rem;
+  font-size: 3.8rem;
+  font-family: 'Pacifico', cursive;
+  text-shadow: 0 2px 8px #2e4d1c, 0 0 12px #b6d99c;
 }
 .site-header .subtitle {
   margin-top: 10px;
-  font-size: 1.2rem;
-  font-weight: 300;
+  font-size: 1.7rem;
+  font-weight: 400;
+  font-family: 'Bebas Neue', Arial, sans-serif;
 }
 
 /* =========================================
    Barra de carga animada
 ========================================= */
 .loading-bar-container {
-  width: 25%;
+  width: 36%;
   height: 15px;
   background: rgba(46,77,28,0.2);
   margin: 20px auto 0;
@@ -135,6 +188,14 @@ h2 {
   border-radius: 50%;
   object-fit: cover;
   margin-bottom: 20px;
+  box-shadow: 0 8px 24px rgba(46,77,28,0.15), 0 1.5px 4px rgba(0,0,0,0.08);
+  transition: transform 0.4s cubic-bezier(.25,.8,.25,1), box-shadow 0.4s cubic-bezier(.25,.8,.25,1);
+  will-change: transform;
+}
+.profile-img:hover {
+  transform: perspective(600px) rotateY(12deg) scale(1.06);
+  box-shadow: 0 16px 40px rgba(46,77,28,0.22), 0 3px 12px rgba(0,0,0,0.12);
+}
 }
 
 .about-me,
@@ -148,20 +209,48 @@ h2 {
 .team-cards-lm {
   display: flex;
   flex-wrap: wrap;
-  gap: 20px;
+  gap: 60px;
   justify-content: center;
   margin-top: 20px;
+  position: relative;
 }
 
 .team-card-lm,
 .team-card-lm-music {
+  overflow: visible;
   background-color: #b6d99c;
-  border-radius: 10px;
+  border-radius: 12px;
   width: 150px;
-  text-align: center;
   padding: 15px;
-  box-shadow: 0 4px 6px rgba(46,77,28,0.1);
+  box-shadow: 0 4px 8px rgba(46,77,28,0.6);
   transition: transform 0.3s, box-shadow 0.3s;
+  color: #2e4d1c; /* Verde musgo para el texto */
+  position: relative;
+}
+
+.team-card-lm:hover,
+.team-card-lm-music:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 15px rgba(0, 0, 0, 0.9),
+    0 0 15px #e0ffe0,
+    0 0 20px #ffffff,
+    0 0 30px #b6ffd9;
+  animation: pulseGlowGreen 1.5s infinite alternate;
+}
+
+@keyframes pulseGlowGreen {
+  from {
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.9),
+      0 0 15px #e0ffe0,
+      0 0 20px #ffffff,
+      0 0 30px #b6ffd9;
+  }
+  to {
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.9),
+      0 0 20px #e0ffe0,
+      0 0 40px #ffffff,
+      0 0 60px #b6ffd9;
+  }
 }
 
 .team-card-lm img,
@@ -181,6 +270,7 @@ h2 {
   font-weight: bold;
   color: #2e4d1c;
   text-decoration: none;
+  position: static;
 }
 
 .team-card-lm a:hover,
@@ -214,22 +304,22 @@ h2 {
 .custom-tooltip {
   opacity: 0;
   visibility: hidden;
-  position: absolute;
-  left: 50%;
-  top: 110%;
-  transform: translateX(-50%) translateY(10px);
-  background: #fffbe6;
+  position: fixed;
+  left: 70%;
+  top: 80%;
+  transform: translate(-50%, -50%) scale(0.8);
+  min-width: 160px;
+  max-width: 220px;
+  background: rgba(182, 217, 156, 0.95);
   color: #2e4d1c;
-  border: 1px solid #7a5c2e;
+  border: 1px solid #4B5D4B; /* Verde grisáceo moderno */
   border-radius: 8px;
   box-shadow: 0 2px 8px rgba(46,77,28,0.15);
   padding: 14px 18px;
-  width: 320px;
-  z-index: 200;
-  font-size: 1rem;
+  z-index: 9999;
   text-align: left;
   pointer-events: none;
-  transition: opacity 0.35s cubic-bezier(.4,0,.2,1), transform 0.35s cubic-bezier(.4,0,.2,1), visibility 0.35s;
+  transition: opacity 0.7s cubic-bezier(.4,0,.2,1), transform 0.7s cubic-bezier(.4,0,.2,1), visibility 0.7s, box-shadow 0.7s;
 }
 .tooltip-router:hover .custom-tooltip,
 .tooltip-redes:hover .custom-tooltip,
@@ -237,7 +327,8 @@ h2 {
 .tooltip-seguridad:hover .custom-tooltip {
   opacity: 1;
   visibility: visible;
-  transform: translateX(-50%) translateY(0);
+  transform: translate(-50%, -50%) scale(1);
+  box-shadow: 0 8px 24px #b6ffd9, 0 2px 8px rgba(46,77,28,0.25);
   pointer-events: auto;
 }
 
@@ -247,7 +338,7 @@ h2 {
 .site-footer {
   text-align: center;
   padding: 20px;
-  background-color: #2e4d1c;
+  background-color: #4B5D4B; /* Verde grisáceo moderno */
   color: #e0ffe0;
 }
 
