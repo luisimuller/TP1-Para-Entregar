@@ -66,17 +66,39 @@ a:hover {
   padding: 50px 20px;
   background: linear-gradient(135deg, #c63ab4, #ffb9b7);
   color: white;
+  
 }
 
 .site-header h1 {
   margin: 0;
-  font-size: 2.5rem;
+  font-size: 4.5rem;
+  font-family: "Sirivennela", sans-serif;
 }
 
 .site-header .subtitle {
   margin-top: 10px;
   font-size: 1.2rem;
   font-weight: 300;
+}
+/* Header con posición relativa para ubicar estrellas */
+.site-header {
+  position: relative;
+  overflow: hidden; /* para que las estrellas no salgan del header */
+}
+
+/* Estrella */
+.header-star {
+  position: absolute;
+  color: white;
+  font-size: 1rem;
+  opacity: 0.8;
+  animation: twinkle 2s infinite alternate;
+}
+
+@keyframes twinkle {
+  0% { opacity: 0.1; transform: scale(0.5) rotate(0deg);}
+  50% { opacity: 1; transform: scale(1.2) rotate(20deg);}
+  100% { opacity: 0.2; transform: scale(0.7) rotate(-15deg);}
 }
 
 /* =========================================
@@ -155,6 +177,7 @@ h2 {
 .about-me,
 .titles {
   text-align: center;
+  font-family: "DM Serif Display", sans-serif;
 }
 
 /* =========================================
@@ -217,6 +240,7 @@ h2 {
 .parraph-movie{
   text-align: center;
   font-weight: bold;
+  font-family: "Poppins",sans-serif;
 }
 
 
