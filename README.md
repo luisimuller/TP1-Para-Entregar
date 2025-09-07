@@ -23,7 +23,7 @@ En este primer proyecto aplicamos conocimientos de HTML, CSS y JavaScript para e
 - JavaScript
 
 ## Host
-[https://frontend-grupo1-tp1.vercel.app/](https://frontend-grupo1-tp1.vercel.app/)
+[https://frontend-com-a-grupo1-tp1.vercel.app/](https://frontend-com-a-grupo1-tp1.vercel.app/)
 
 ## Estructura de Archivos
 ├── css/ # Hojas de estilo (CSS)\
