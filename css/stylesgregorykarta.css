@@ -1,4 +1,4 @@
-/* 🎨 Paleta de colores */
+/* colores */
 :root {
   --amarillo: #FFD700;
   --negro: #121212;
@@ -7,7 +7,7 @@
   --blanco: #ffffff;
 }
 
-/* ⚙️ Estilos generales */
+/* Estilos generales */
 body {
   font-family: Arial, sans-serif;
   margin: 0;
@@ -17,7 +17,7 @@ body {
   line-height: 1.6;
 }
 
-/* 🔗 Navegación */
+/*  Navegación */
 .site-nav {
   text-align: center;
   background-color: var(--gris-oscuro);
@@ -38,7 +38,7 @@ body {
   text-decoration: underline;
 }
 
-/* 🏷️ Encabezado */
+/*  Encabezado */
 .site-header {
   text-align: center;
   padding: 50px 20px;
@@ -48,7 +48,10 @@ body {
 .site-header h1 {
   margin: 0;
   font-size: 2.5rem;
+  font-family: "Nosifer", sans-serif;
+  font-weight: 400;                   
 }
+
 .site-header .subtitle {
   margin-top: 10px;
   font-size: 1.2rem;
@@ -56,7 +59,7 @@ body {
   color: var(--gris-claro);
 }
 
-/* 📊 Barra de carga */
+/* Barra de carga */
 .loading-bar-container {
   width: 25%;
   height: 15px;
